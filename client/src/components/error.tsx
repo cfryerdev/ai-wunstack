@@ -1,0 +1,1 @@
+export default () => <div className="mt-2 alert alert-danger">Error talking to Wun, please try again.</div>

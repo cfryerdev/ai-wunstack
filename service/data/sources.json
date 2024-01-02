@@ -1,0 +1,38 @@
+{
+    "contexts": [
+        { "id": 0, "name": "general"},
+        { "id": 1, "name": "microfrontends"},
+        { "id": 2, "name": "module federation"},
+        { "id": 3, "name": "repositories"},
+        { "id": 4, "name": "redis"},
+        { "id": 5, "name": "set theory"},
+        { "id": 6, "name": "modern web"},
+        { "id": 7, "name": "search"}
+    ],
+    "files": [
+        { "contexts": [1,2], "type": "pdf", "path": "/files/mfe-summary-deck.pdf"},
+        { "contexts": [1,2], "type": "image", "path": "/files/mfe_architecture.jpg"}
+    ],
+    "websites": [
+        { "contexts": [1,3], "url": "https://medium.com/@cfryerdev/monorepo-vs-polyrepo-the-great-debate-7b71068e005c"},
+        { "contexts": [1,6], "url": "https://medium.com/@cfryerdev/distributed-multi-language-frontends-dfe-f346721f710c"},
+        { "contexts": [1,2,6], "url": "https://medium.com/@cfryerdev/module-federation-architecture-mfa-mfe-a411a289e670"},
+        { "contexts": [1,2,6], "url": "https://medium.com/swlh/webpack-5-module-federation-a-game-changer-to-javascript-architecture-bcdd30e02669"},
+        { "contexts": [1,2], "url": "https://gist.github.com/cfryerdev/4df4d62954e50ebae5eb04253af3ae11"}
+    ],
+    "videos": [
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=bXfK873ASzY"},
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=D3XYAx30CNc"},
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=w58aZjACETQ"},
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=x22F4hSdZJM"},
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=2eGXIbc6lZA"},
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=AU7dKWNfWiA"},
+        { "contexts": [1,2], "url": "https://www.youtube.com/watch?v=-ei6RqZilYI"},
+        { "contexts": [1], "url": "https://www.youtube.com/watch?v=PEigblVY8Cc" }
+    ],
+    "repos": [
+        { "contexts": [1,2], "branch": "main", "url": "https://github.com/cfryerdev/microfrontends-react-js-typescript"},
+        { "contexts": [1,2], "branch": "main", "url": "https://github.com/cfryerdev/microfrontends-nextjs-react-typescript"},
+        { "contexts": [1,2], "branch": "main", "url": "https://github.com/cfryerdev/workshope-mfe-react"}
+    ]
+}

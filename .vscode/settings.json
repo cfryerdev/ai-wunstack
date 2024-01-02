@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/bun.lockb": true,
+        "**/pnpm-lock.yaml": true
+    },
+    "cSpell.words": [
+        "chromadb",
+        "HNSW",
+        "hnswlib",
+        "inmemory",
+        "langchain",
+        "microfrontends",
+        "openai",
+        "PGDATABASE",
+        "PGHOST",
+        "PGPASSWORD",
+        "PGPORT",
+        "PGUSER",
+        "vectorstores",
+        "youtubei"
+    ]
+}

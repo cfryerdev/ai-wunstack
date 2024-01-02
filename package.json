@@ -1,0 +1,10 @@
+{
+  "name": "wun-openai-solution",
+  "version": "1.0.0",
+  "description": "Chris Fryer's OpenAI Assistant named Wun.",
+  "scripts": {
+    "start": "pnpm -r --reporter append-only --no-bail start"
+  },
+  "author": "",
+  "license": "MIT"
+}
