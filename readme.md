@@ -8,6 +8,7 @@ First we need to install our pre-reqs...
 
 ```bash
 npm install -g pnpm
+pnpm i
 pnpm exec playwright install
 ```
 
