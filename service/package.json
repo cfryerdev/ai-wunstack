@@ -21,7 +21,7 @@
     "swagger-jsdoc": "6.2.8",
     "swagger-ui-express": "^4.3.0",
     "youtube-transcript": "^1.0.6",
-    "youtubei.js": "^5.8.0",
+    "youtubei.js": "9.1.0",
     "pg": "^8.11.3"
   },
   "devDependencies": {
