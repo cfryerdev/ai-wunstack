@@ -11,6 +11,7 @@
         "inmemory",
         "langchain",
         "microfrontends",
+        "Ollama",
         "openai",
         "PGDATABASE",
         "PGHOST",

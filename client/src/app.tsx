@@ -1,4 +1,4 @@
-import { useState, useMemo, memo } from "react";
+import { useState, useMemo, memo, useEffect } from "react";
 import Markdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -13,7 +13,27 @@ const Home = () => {
 	const [lastMessage, setLastMessage] = useState<string | null>(null);
 	const [messages, setMessages] = useState<ChatMessage[]>([]);
 	const [loading, setLoading] = useState(false);
+	const [apiAvilable, setApiAvailable] = useState(false);
 	const [hasError, setHasError] = useState(false);
+
+	const checkHealthAndSetLoading = async () => {
+		try {
+			const response = await fetch('http://localhost:8080/api/health');
+			if (response.status === 200) {
+				setApiAvailable(true);
+			} else {
+				// Retry after 5 seconds if the response status is not 200
+				setTimeout(checkHealthAndSetLoading, 5000);
+			}
+		} catch (error) {
+			// Retry after 5 seconds if there's an error
+			setTimeout(checkHealthAndSetLoading, 5000);
+		}
+	}
+
+	useEffect(() => {
+		checkHealthAndSetLoading();
+	}, [])
 
 	const handleChatMessage = (event: React.KeyboardEvent<HTMLTextAreaElement>) => {
 		if (event.key === "Enter") {
@@ -121,7 +141,7 @@ const Home = () => {
 		));
 	}, [messages]);
 
-	return (
+	return apiAvilable ? (
 		<>
 			<ul className="list-group">
 				{chatMessages}
@@ -141,7 +161,7 @@ const Home = () => {
 				/>
 			</div>
 		</>
-	);
+	) : <div>Waiting for api to become available...</div>;
 };
 
 export default Home;
